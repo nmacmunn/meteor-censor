@@ -24,11 +24,11 @@ var startObserving = function (cursor) {
     });
 };
 
-censor = function (name, onSubscribe) {
+censor = function (name, handler) {
 
     Meteor.publish(name, function () {
 
-        var cursors = onSubscribe.call(this);
+        var cursors = handler.apply(this, arguments);
 
         if (!_.isArray(cursors)) {
             cursors = [cursors];

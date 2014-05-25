@@ -5,4 +5,5 @@
   "author": "Neil MacMunn <neil@macmunn.com> (https://github.com/nmacmunn)",
   "version": "0.0.1",
   "git": "https://github.com/nmacmunn/meteor-censor",
+  "packages": {}
 }
