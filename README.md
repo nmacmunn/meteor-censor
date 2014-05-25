@@ -10,7 +10,7 @@ Meteor.censor(name, func);
 ```
 
 ### Example
-Return a set of user docs joined with corresponding 
+Return a set of user docs joined with the corresponding users' avatars.
 
 ```javascript
 Meteor.censor("users", function () {
