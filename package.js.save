@@ -1,0 +1,13 @@
+Package.describe({
+  summary: "REPLACEME - What does this package (or the original one you're wrapping) do?"
+});
+
+Package.on_use(function (api, where) {
+  api.add_files('transform-publish.js', ['server']);
+});
+
+Package.on_test(function (api) {
+  api.use('transform-publish');
+
+  api.add_files('meteor-publish-transform_tests.js', ['server']);
+});
